@@ -24,7 +24,7 @@ namespace Infrastructure.Data.Configuration
                 .HasMaxLength(50);
 
             builder.Property(p=>p.Precio)
-                .HasColumnType("decimal(10,8)");
+                .HasColumnType("decimal(10,2)");
 
             builder.HasOne(p=>p.Marca)
             .WithMany(p=>p.Productos)
